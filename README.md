@@ -1,6 +1,6 @@
 # Data Broadcasting Project with nRF24L01 Module
 
-This project aims to create a data broadcasting system using the nRF24L01 transceiver module for wireless transmission and reception. It includes a web interface on the transmitter side to control and manage the broadcasting process.
+This project aims to create a data broadcasting system using the nRF24L01 transceiver module for wireless transmission and reception. It includes a web interface on the transmitter side to control and manage the broadcasting process. The output at the receiver side is displayed on an SSD1306 OLED display, and critical words can be triggered using a red LED or buzzer at the receiving side.
 
 ## Features
 
@@ -10,7 +10,8 @@ This project aims to create a data broadcasting system using the nRF24L01 transc
 - Web interface on the transmitter side for easy control and management.
 - Efficient dissemination of data to multiple receivers.
 - Real-time monitoring and control of the broadcasting process.
-- Seamless integration into various applications.
+- Output displayed on an SSD1306 OLED display at the receiver side.
+- Critical words trigger a red LED or buzzer at the receiving side.
 
 ## Getting Started
 
@@ -21,8 +22,10 @@ This project aims to create a data broadcasting system using the nRF24L01 transc
 
 ### Hardware Setup
 
-1. Connect the nRF24L01 module to the transmitter Arduino board.
+1. Connect the nRF24L01 module to the transmitter esp8266 or any board with wifi capability.
 2. Connect the nRF24L01 module to the receiver Arduino board(s).
+3. Connect the SSD1306 OLED display to the receiver Arduino board.
+4. Connect the red LED or buzzer to the receiver Arduino board.
 
 ### Software Setup
 
@@ -37,6 +40,8 @@ This project aims to create a data broadcasting system using the nRF24L01 transc
 2. Access the web interface on the transmitter side through a web browser.
 3. Use the web interface to control and manage the data broadcasting process.
 4. The transmitted data will be received by the nRF24L01 modules on the receiver side.
+5. The received data will be displayed on the SSD1306 OLED display.
+6. If critical words are detected in the received data, the red LED or buzzer will be triggered accordingly.
 
 ## Contributing
 

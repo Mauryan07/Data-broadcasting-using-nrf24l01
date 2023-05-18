@@ -92,8 +92,6 @@ void setup() {
     html += "<br>";
     html += "<p>Made by: </p>";
     html += "<p>Chandraprakash Maurya</p>";
-    html += "<p>&</p>";
-    html += "<p>Alvin</p>";
     html += "</body></html>";
     server.send(200, "text/html", html);
 });
